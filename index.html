@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/node_modules/keen-slider/keen-slider.min.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Anime Prime</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        
+        <a href="#" class="logo">
+          <h2>
+            ANIME PRIME
+            <i class="fas fa-feather-alt"></i>
+          </h2>
+        </a>
+
+        <i class="fas fa-bars" id="menu-mobile"></i>
+
+        <nav>
+          <a href="#">INÍCIO</a>
+          <a href="#">POPULARES</a>
+          <a href="#">LANÇAMENTOS</a>
+          <a href="#">LISTA</a>
+          <a href="#">GÊNEROS</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-title">
+        <div class="shade">
+          <div class="container">
+            <h3 class="title">NARUTO SHIPPUDEN</h3>
+            <p class="description">
+              Naruto Shippuden é a continuação de Naruto 
+              e se passa dois anos e meio após os acontecimentos da série original.
+            </p>
+            
+            <div class="button-wrapper">
+              <button id="btn-watch" onclick="watch(naruto)" class="button" role="button">
+                <i class="fas fa-play"></i>
+                ASSISTIR AGORA
+              </button>
+              <button id="btn-info" onclick="info(naruto)" class="button" role="button">
+                <i class="fas fa-info-circle"></i>
+                MAIS INFORMAÇÕES
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="highlight-anime">
+        <i class="far fa-star"></i>
+        POPULARES
+      </h4>
+
+			<div id="anime-slides" class="keen-slider">
+				<div class="keen-slider__slide number-slide1" onclick="openAnime(animes[0])"></div>
+				<div class="keen-slider__slide number-slide2" onclick="openAnime(animes[1])"></div>
+				<div class="keen-slider__slide number-slide3" onclick="openAnime(animes[2])"></div>
+				<div class="keen-slider__slide number-slide4" onclick="openAnime(animes[3])"></div>
+				<div class="keen-slider__slide number-slide5" onclick="openAnime(animes[4])"></div>
+				<div class="keen-slider__slide number-slide6" onclick="openAnime(animes[5])"></div>
+				<div class="keen-slider__slide number-slide7" onclick="openAnime(animes[6])"></div>
+				<div class="keen-slider__slide number-slide8" onclick="openAnime(animes[7])"></div>
+				<div class="keen-slider__slide number-slide9" onclick="openAnime(animes[8])"></div>
+				<div class="keen-slider__slide number-slide10" onclick="openAnime(animes[9])"></div>
+			</div>
+
+      <div class="modal-wrapper hidden" onclick="closeModal()">
+        <div class="modal">
+          <iframe class="iframe" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      
+      <div class="modal-wrapper-info hidden" onclick="closeModal()">
+        <div class="modal-info"></div>
+      </div>
+      
+    </main>
+
+		<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+		<script src="/node_modules/keen-slider/keen-slider.js"></script>
+    <script src="js/new-slider.js"></script>
+    <script src="js/global.js"></script>
+  </body>
+</html>

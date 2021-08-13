@@ -1,0 +1,375 @@
+:root {
+  --black: #141414;
+  --purple: #9e4cb8;
+  --dark-purple: #331b3a;
+  --grey: #e0e0e0;
+  --white: #f1f1f1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*base elements*/
+body {
+  background-color: var(--black);
+  font-family: "Montserrat", sans-serif;
+  color: var(--white);
+}
+
+.container {
+  margin: 0rem 3rem;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo h2 {
+  color: var(--purple);
+  font-family: "Baloo 2", cursive;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+#menu-mobile {
+  display: none;
+}
+
+header nav a {
+  font-size: 1.8rem;
+  color: var(--grey);
+  padding: 0rem 1rem;
+}
+
+header nav a:hover {
+  color: var(--purple);
+}
+
+/*main-title*/
+
+.main-title {
+  font-size: 1.6rem;
+  background-image: url(/img/naruto-banner.jpg);
+
+  height: 50rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.shade {
+  width: 100%;
+  height: 50rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.title {
+  margin-top: 5%;
+  font-size: 4rem;
+}
+
+.description {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  max-width: 45%;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  outline: none;
+  color: var(--white);
+  border: 0.1rem solid var(--purple);
+
+  padding: 1.5rem 3rem;
+  margin-right: 1.5rem;
+
+  cursor: pointer;
+  transition: 1s ease all;
+}
+
+.button:hover {
+  background-color: var(--purple);
+}
+
+.button i {
+  margin-right: 0.8rem;
+}
+
+.highlight-anime {
+  font-size: 2.5rem;
+  margin: 1rem 3rem;
+}
+
+/*slider*/
+
+.keen-slider {
+  cursor: pointer;
+}
+
+[class^="number-slide"],
+[class*=" number-slide"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 500;
+  height: 35rem;
+  max-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.number-slide1 {
+  background-image: url(/img/naruto-poster.jpg);
+}
+
+.number-slide2 {
+  background-image: url(/img/shingeki-poster.jpg);
+}
+
+.number-slide3 {
+  background-image: url(/img/hunter-poster.jpg);
+}
+
+.number-slide4 {
+  background-image: url(/img/fma-poster.jpg);
+}
+
+.number-slide5 {
+  background-image: url(/img/jujutsu-poster.jpg);
+}
+
+.number-slide6 {
+  background-image: url(/img/kimetsu-poster.jpg);
+}
+
+.number-slide7 {
+  background-image: url(/img/boku-poster.jpg);
+}
+
+.number-slide8 {
+  background-image: url(/img/steinsgate-poster.jpg);
+}
+
+.number-slide9 {
+  background-image: url(/img/bleach-poster.jpg);
+}
+
+.number-slide10 {
+  background-image: url(/img/onepiece-poster.jpg);
+}
+
+/*Modal*/
+
+.modal-wrapper,
+.modal-wrapper-info {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-wrapper .modal {
+  margin: auto auto;
+}
+
+.modal-wrapper-info .modal-info {
+  width: 60rem;
+  height: 60rem;
+  padding: 3rem;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  background-color: var(--dark-purple);
+  margin: auto;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.iframe {
+  width: 128rem;
+  height: 72rem;
+}
+
+@media (max-width: 1024px) {
+  .iframe {
+    width: 102.4rem;
+    height: 57.6rem;
+  }
+}
+
+@media (max-width: 915px) {
+  header .logo h2 {
+    font-size: 3rem;
+  }
+
+  header nav a {
+    font-size: 1.3rem;
+    color: var(--grey);
+    padding: 0rem 1rem;
+  }
+
+  .main-title {
+    background-position: center;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .iframe {
+    width: 76.8rem;
+    height: 43.2rem;
+  }
+}
+
+@media (max-width: 730px) {
+  header .logo h2 {
+    font-size: 3rem;
+  }
+
+  #menu-mobile {
+    display: block;
+    color: var(--purple);
+    font-size: 3rem;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 4rem;
+    width: 100vw;
+    background-color: var(--black);
+  }
+
+  nav a {
+    height: 5rem;
+    line-height: 5rem;
+    padding: 0;
+  }
+
+  nav a:hover {
+    border-top: 0.1rem solid var(--purple);
+    border-bottom: 0.1rem solid var(--purple);
+  }
+
+  .iframe {
+    width: 60.1rem;
+    height: 33.8rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .button-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  [class^="number-slide"],
+  [class*=" number-slide"] {
+    height: 55rem;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .iframe {
+    width: 41.4rem;
+    height: 23.3rem;
+  }
+
+  .modal-wrapper-info .modal-info {
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 375px) {
+  [class^="number-slide"],
+  [class*=" number-slide"] {
+    height: 47rem;
+  }
+
+  .iframe {
+    width: 37.5rem;
+    height: 21.1rem;
+  }
+
+  .modal-wrapper-info .modal-info {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .iframe {
+    width: 36rem;
+    height: 20.2rem;
+  }
+
+  .modal-wrapper-info .modal-info {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  header .logo h2 {
+    font-size: 2.5rem;
+  }
+
+  #menu-mobile {
+    font-size: 2.5rem;
+  }
+
+  [class^="number-slide"],
+  [class*=" number-slide"] {
+    height: 40rem;
+  }
+
+  .iframe {
+    width: 32rem;
+    height: 18rem;
+  }
+
+  .modal-wrapper-info .modal-info {
+    font-size: 1.2rem;
+  }
+}
