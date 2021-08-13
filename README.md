@@ -4,4 +4,4 @@ I'm taking part in LocalizaLabs React Developer bootcamp at Digital Innovation O
 
 - Português
 
-Estou participando do bootcamp da LocalizaLabs React Developer na Digital Innovation One e neste exercício eu tive que fazer uma interface parecida com a Netflix.
+Estou participando do bootcamp da LocalizaLabs React Developer na Digital Innovation One e neste exercício eu tive que fazer uma interface parecida com da Netflix.
